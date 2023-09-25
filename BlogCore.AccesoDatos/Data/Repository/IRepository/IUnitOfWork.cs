@@ -12,7 +12,7 @@ namespace BlogCore.AccesoDatos.Data.Repository.IRepository
 
         ICategoriaRepository _categoriaRepository { get; }
         //aqui van todos los repositorios
-
+        IArticuloRepository _articuloRepository { get; }
         void Save();
 
 
