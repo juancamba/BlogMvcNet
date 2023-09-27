@@ -80,6 +80,7 @@ namespace BlogCore.Areas.Admin.Controllers
                 return Json(new { success = false, message = "Error borrando categoria" });
             }
             _unitOfWork._categoriaRepository.Remove(objFromDeb);
+            _unitOfWork.Save();
             return Json(new { success = true, message = "Categoria borrada" });
         }
 
